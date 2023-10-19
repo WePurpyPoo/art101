@@ -8,3 +8,15 @@
     background-color: #e3cff8;
     ;
   }
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto ;
+
+}
+
+figcaption {
+  text-align: center;
+  font-size: large;
+}
