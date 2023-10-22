@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -20,28 +20,88 @@
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 <body>
+
+	
+
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>Choose a simple computer game and create pseudocode for it. Create a javascript file that has the pseudocode commented in.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>We had a bit of trouble trying to figure out a day to day activity that people would need instructions for, as most such tasks 
+						are common sense. However, when we though about the lives of Santa Cruz students in particular, we realized we had a great
+						resource available to us, an abundance of hiking trails! We weere able to make some code guiding others how to prepare and engage in
+						a hike, which could potentially be a dangerous endeavor. Other than that issue, we did not have any problems!</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? 
+
+						We were able to complete the pseudo codes rather quickly and easily, is what we thought after we finished the first draft.
+						After coming back and reexamining our work however, we discovered that we had either rushed through or ignored entirely necessary 
+						steps for the game to function. for example, We had created all the instructions for the game to function before we realized we had included
+                        nothing that would actually allow the players to see the state of the game! If we did player, they effectively would have been forced to
+						play in the dark. After some revisions however, we now feel confident that our pseudocode is sufficient and the assignment went smoothly.
+
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
+					<pre><code>
+						<h3>Going Hiking Pseudocode</h3>
+			
+			- Hiking Task List
+				- Preparation Steps
+					- Decide on where you want to go! Research hiking trails in the area, and select one that you think you would like!
+						- Keep in mind the difficulty of the trek, or scenery you would like to visit!
+						- Check the weather forecast! You don’t want to be surprised by rain on your day out!
+						- Make sure you pack sources of water and food, hiking takes a lot of energy.
+						- Bring safety equipment such as first aid in case you get hurt! Nature can be beautiful, but it is also dangerous.
+				- Activity Steps
+					- Arrive on the scene. Take a deep breath, your adventure is about to begin!
+					- Be aware of your surroundings, whether it be dangerous animals or treacherous conditions.
+					- Make sure you are hydrated, dehydration is very dangerous especially in the wilderness.
+					- If you are new to hiking, take it slow! The ground can be less stable than expected, and getting a twisted ankle in the wilderness can be inconvenient.
+					- Know your limits. You may feel invigorated on your trip, but you don’t want to use up all your energy before you make the trek back. 
+						When in doubt, don’t be afraid to turn around! The trail will still be there another day.
+					- Have fun! Immersing yourself in nature can be very refreshing from your day-to-day life, make sure you make the most of it!
+					</code></pre>
 					<div id="output"></div>
+			</div>
+            
+			<div class="minor-section">
+			     <pre><code> <h3>Go Fish Pseudocode</h3>
+					// 1: Create a deck (an array of 52 items) of playing cards, 4 of each card type, and shuffle them randomly.
+					// 2: Ask how many players will play the game, awaiting a numerical input from 2 to 6.
+					   	//2.1: If an invalid input is given, display an error and repeat the prompts.
+					// 3: Create a match variable for each person, representing each player's "points" twoards victory. Initialize each at 0.
+					// 4: Give each player 7 cards from the deck into their hand, removing them from the top of the deck array and inserting them into the different “hand” arrays.
+					// 5: Randomly order a list of player names to represent player order.
+					// Begin game loop
+					  	// 6: Display each player’s current hand on their screen.
+					  	// 7: Begin the next player’s turn.
+							// 7.1: If a player has no cards, draw a card from the deck and skip to step 10.
+					  	/ 8: Have player select another player
+					  	// 9: Have player select a card type (Kings, Queens, Jacks, etc.) that they contain in their hand.
+							// 9.1:  if that player has 1 or more cards of that card type:
+							  	// 9.1.1: remove all cards of that type from selected player’s hand
+							  	// 9.1.2: If the player now has 4 of the same card type, remove those cards from their hand and add 1 to that person’s match.
+						  	// 9.2: if else
+								// 9.2.1: the player who asked draws 1 card from the deck
+					  	// 10: Display to all players who asked a card from whom (if any), how many cards were taken (if any), and who drew a card from the deck (if any).
+					  	// 11: Move the current player to the end of the turn order.
+					  	// 12: If there still exists some cards in the deck or any player’s hands, return to step 6. Else, break from loop.
+				  	// 13: Else, Whichever player has the most match points here is the winner, and the game terminates.
+		
+			    </code></pre>
 			</div>
 		</section>
 		<nav id="links">
