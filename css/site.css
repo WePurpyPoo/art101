@@ -43,3 +43,15 @@ p {
   border: solid 1px #888;
   background-color: #e3cff8;
 }
+
+ .side-by-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .photo-box {
+  flex-basis:50%;
+  width: 45%;
+ }

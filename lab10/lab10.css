@@ -1,0 +1,27 @@
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #b371bf;
+    ;
+  }
+
+.dialogue {
+    background-color: white;
+    font-size: large;
+    border: dotted 1px #888;
+    padding: 10px;
+}
+
+/*This will be the class for the generated text*/
+/*It makes the text bee-colored!*/
+#make-convo {
+  background-color: black;
+  border: solid 3px yellow;
+  color: white;
+  padding: 5px;
+}
+
+.dialogue p {
+  background-color: rgb(238, 250, 65);
+}
