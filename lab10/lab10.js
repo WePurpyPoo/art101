@@ -27,7 +27,7 @@ function beeMovie(){
         bee = false
     }
         else { 
-        $("#output").append('<img src="https://cdn.discordapp.com/attachments/1158889284896575509/1174840487077756969/image.png?ex=65690e77&is=65569977&hm=a93dfd79509f090c658131c0771253db503495acb1603508c8642f1cc0472cf4&" width=100 height=100></img>');
+        $("#output").append('<br><img src="https://cdn.discordapp.com/attachments/1158889284896575509/1174840487077756969/image.png?ex=65690e77&is=65569977&hm=a93dfd79509f090c658131c0771253db503495acb1603508c8642f1cc0472cf4&" width=100 height=100></img>');
         console.log("bee is false")
         bee = true
         }
@@ -36,7 +36,7 @@ function beeMovie(){
 
 
 function main(){
-    $("#output").append(" <button id='make-convo' onclick = 'beeMovie()'>Click here to have an all-immersive bee movie experince! </button>");
+    $("#output").append(" <button id='make-convo' onclick = 'beeMovie()'>Click here to have an all-immersive bee movie experience! </button>");
 }
 
 main();
