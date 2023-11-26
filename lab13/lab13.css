@@ -1,0 +1,14 @@
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #b371bf;
+    
+  }
+
+#column{
+  background-color: yellow;
+  border: solid 1px #413;
+  column-count: 5;
+  column-width: 50;
+}
