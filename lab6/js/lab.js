@@ -23,8 +23,8 @@ var myMainRide = {
 };
 
 //Writes statistics of car and transport to webpage
-document.writeln("These are the pieces of equipment I use to get around! They are: " + myTransport + "</br>");
-
-document.writeln("My Swiggity-swoogity Main Ride: <pre>",
-JSON.stringify(myMainRide, null, '\t'), +'\n'+"The car isn't mine, it's main man Lego Yoda's. A college student couldn't afford this! </pre>");
+$("#output").append("<p>These are the pieces of equipment I use to get around! They are: " + myTransport + "</br></p>");
+document.writeln("My Swiggity-swoogity Main Ride:",
+JSON.stringify(myMainRide, null, '\t'));
+$("#honda").html("<p>The car isn't mine, it's main man Lego Yoda's. A college student couldn't afford this!</p>")
 

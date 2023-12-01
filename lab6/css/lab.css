@@ -14,3 +14,9 @@ img {
   margin-right: auto;
   display: block;
 }
+
+#honda p {
+  font-size: xx-large;
+  text-align: center;
+  background-color: plum;
+}

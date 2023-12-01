@@ -5,6 +5,21 @@
     ;
   }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-
+.name {
+  position: absolute;
+  bottom: -475px;
+  width: 450px;
+  left: 420px;
+  word-wrap: break-word;
+  font-size: 350%;
+  line-height: 90%;
+  text-align: center;
+  margin: 200px;
+}
   

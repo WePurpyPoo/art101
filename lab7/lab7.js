@@ -2,11 +2,9 @@
 // Author: Joey Longo & Chase Croy-Perrett
 // Date: 2 Nov 2023
 
-function sortname() {
-    //asking for the users name
-    var userName = window.prompt("Enter your name")
+function sortname(name) {
     //making the name lowercase so it sorts properly
-    var userName = userName.toLowerCase();
+    var userName = name.toLowerCase();
     console.log("userName =", userName);
     //splitting the name into an array then printing
     var splitArray = userName.split('');
@@ -22,5 +20,29 @@ function sortname() {
     //code taken from Wes Modes
 }
 
-name = sortname();
-document.writeln("Here's your name spelled very correctly: ", name, "</br>"); 
+function generateAnagram(word) {
+    // Convert the word to an array of characters
+    const characters = word.split('');
+  
+    // Shuffle the array of characters
+    for (let i = characters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [characters[i], characters[j]] = [characters[j], characters[i]];
+    }
+  
+    // Join the shuffled characters back into a string
+    const anagram = characters.join('');
+  
+    return anagram;
+  }
+  //help from ChatGPT
+
+$("#my-button").click(function(){
+    var name = $("#input").val()
+    console.log(name)
+    var anagram = generateAnagram(name)
+    console.log(anagram)
+    var sortnamed = sortname(name)
+    $(".name").html(anagram);
+    $("#output").html("<p>Here's your name spelled very correctly: " + sortnamed + "</br></p>"); 
+})
