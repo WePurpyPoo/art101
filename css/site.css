@@ -9,7 +9,8 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: monospace;
+  font-size: 250%;
   text-align: center;
 }
 
@@ -17,11 +18,12 @@ h1,h2,h3 {
 h1 {
   letter-spacing: 2px;
   word-spacing: 5px;
-  font-size: 200%;
+  font-size: 300%;
 }
 
 p {
   font-size: larger;
+  font-family: monospace;
   background-color: #e1aee9;
   border: solid 1px #888;
   margin: 10px;
@@ -54,4 +56,15 @@ p {
  .photo-box {
   flex-basis:50%;
   width: 45%;
+ }
+
+ .transparent {
+  border: none;
+  max-width: 1000px;
+  max-height: 1000px;
+ }
+
+ .cool {
+  max-width: 1000px;
+  max-height: 1000px;
  }
